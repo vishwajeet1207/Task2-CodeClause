@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Countdown Timer and Stopwatch</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+        <header>
+		    <h1>Countdown Timer and Stopwatch</h1>
+        </header>
+        <div class="timer">
+            <bl class="text">Count-down Timer</bl>
+            <br><br>
+            <b1 class="text1">Enter time in seconds:</b1>
+            <br><br>
+            <input type="number" id="countdownTime" placeholder="Enter time in seconds">
+            <button onclick="startCountdown()">Start Countdown</button>
+            <h3 id="countdownDisplay">0d 0hr 0m 0s</h3>
+            <br>
+            <button onclick="stopCountdown()">Stop Countdown</button>
+          </div>
+          <br><br>
+		<div class="stopwatch">
+			<bl class="text">Stopwatch</bl>
+            <br><br>
+			<button onclick="startStopwatch()">Start</button>
+            <br><br>
+			<button onclick="stopStopwatch()">Stop</button>
+			<br><br>
+            <button onclick="resetStopwatch()">Reset</button>
+			<h3 id="stopwatchDisplay">00:00:00</h3>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
+
